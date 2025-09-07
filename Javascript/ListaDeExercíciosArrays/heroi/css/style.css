@@ -1,0 +1,77 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+padding:20px;
+background: #0f1724;
+color:#e6eef8;
+
+}
+
+
+h1{
+text-align:center;
+margin-bottom:20px;
+color:#ffffff;
+}
+
+
+.lista-herois{
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap:20px;
+max-width:1200px;
+margin:0 auto;
+}
+
+
+.heroi-card{
+background:#02061799;
+border-radius:12px;
+padding:10px;
+box-shadow:0 6px 18px #02061799;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+height: 200px;
+width: 1000px;
+align-items: center;
+ margin: 0 auto;
+}
+
+
+
+.heroiTxt{
+font-weight:bold;
+font-size:20px;
+margin-bottom:6px;
+color:#dbeafe;
+}
+
+.acao{
+font-weight:bold;
+font-size:20px;
+margin-bottom:6px;
+color:#ff0000;
+}
+.acaoDefesa{
+
+    font-weight:bold;
+font-size:20px;
+margin-bottom:6px;
+color:#00ff00;
+}
+.acaoCorre{
+
+    font-weight:bold;
+font-size:20px;
+margin-bottom:6px;
+color:#fbff00;
+}
+@media (max-width:600px){
+body{padding:10px;}
+h1{font-size:22px;}
+.heroi-card{padding:12px;}
+
+}
+
+/* Este código é de total propriedade de Isaac Hideki Shiokawa*/
