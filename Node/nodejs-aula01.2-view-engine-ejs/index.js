@@ -12,16 +12,26 @@ app.get("/", (req, res) => {
 res.render("index")
 
 });
+app.get("/produtos", (req, res) => {
+res.render("produtos")
+
+});
+app.get("/clientes", (req, res) => {
+res.render("clientes")
+
+});
+
+
 
 // ROTA PRODUTOS 
-app.get("/Produto", (req , res) => {
-    res.send("<h1>Bem-Vindo a página de Produtos!</h1>")
-})
+//app.get("/Produtos", (req , res) => {
+ //   res.send("<h1>Bem-Vindo a página de Produtos!</h1>")
+//})
                                                                                                     
 // ROTA CLIENTES 
-app.get("/Clientes", (req , res) => {
-    res.send("<h1>Bem-Vindo a página de Clientes!</h1>")
-})
+//app.get("/Clientes", (req , res) => {
+ //   res.send("<h1>Bem-Vindo a página de Clientes!</h1>")
+//})
 
 // Iniciando o servidor HTTP
 //O servidor escutará a porta 8080l
