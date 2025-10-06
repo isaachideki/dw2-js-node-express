@@ -1,0 +1,35 @@
+    <%- include ('partials/header.ejs')%>
+    <%- include ('partials/navbar.ejs')%>
+    
+
+    <h1>Bem-vindo a pagina de pedidos!</h1>
+    <h3>Lista de pedidos:</h3>
+    <hr>
+    <table class="table table-bordered table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Número do Pedido:</th>
+                <th>jogos:</th>
+                <th>Valor:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% pedidos.forEach(pedido   =>{%>
+                <tr>
+                    <td><%= pedido.numero %></td>
+                    <td><%= pedido.jogo %></td>
+                    <td>R$ <%= pedido.valor %></td>
+                </tr>
+ 
+          <%  }) %>
+        </tbody>
+    </table>
+ 
+<br>
+ 
+    <ul>
+        <li><a href="/"><< Voltar</a></li>
+       
+    </ul>
+    <%- include ('partials/footer.ejs')%>
+ 

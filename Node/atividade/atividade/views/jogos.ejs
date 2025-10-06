@@ -1,0 +1,37 @@
+<%- include ('partials/header.ejs')%>
+    <%- include ('partials/navbar.ejs')%>
+<div class="container mt-5">
+    <h1>Bem-vindo à página de jogos!</h1>
+    <h3>Lista de jogos:</h3>
+    <hr>
+    <table class="table table-bordered table-hover"> 
+        <thead class="table-dark">
+            <tr>
+                <th><p>Nome do Jogo:</p></th>
+                <th>Ano de Lançamento:</th>
+          
+               <th>Preço:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% jogos.forEach(jogos   =>{%>
+                <tr>
+                    <td><%= jogos.nome %></td>
+            
+                 <td><%= jogos.ano %></td>
+                    <td>R$ <%= jogos.preco %></td>
+                </tr>
+ 
+          <%  }) %>
+        </tbody>
+    </table>
+ 
+<br>
+ 
+    <ul class="list-unstyled">
+        <li><a href="/"><< Voltar</a></li>
+       
+  
+    </ul>
+</div>
+    <%- include ('partials/footer.ejs')%>

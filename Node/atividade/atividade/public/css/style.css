@@ -1,0 +1,114 @@
+body {
+    background-color: #03045e;
+    color: #FFFFFF; 
+    font-family: 'Arial', sans-serif;
+}
+:root {
+    --highlight-color: #0077b6; 
+    --panel-color: #0d1e84; 
+}
+
+
+.steam-header {
+    background-color: var(--panel-color); 
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--highlight-color); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.steam-header .title {
+    color: #FFFFFF;
+    font-size: 5em;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: left;
+}
+.steam-header img {
+    border-radius: 100px;
+    border: 6px solid #FFFFFF; 
+}
+.navbar {
+    background-color: var(--panel-color) !important; 
+    border-bottom: 1px solid #005a8f;
+}
+
+.navbar .nav-link {
+    color: #e0e0e0 !important; 
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+    color: var(--highlight-color) !important; 
+    font-weight: bold;
+}
+p {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+h1, h2, h3 {
+    color: #FFFFFF; 
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.table {
+    color: #FFFFFF; 
+    background-color: var(--panel-color); 
+    border: 1px solid var(--highlight-color);
+}
+
+.table-dark {
+    background-color: #03045e !important; 
+    border-bottom: 3px solid var(--highlight-color) !important; 
+}
+
+.table-hover tbody tr:hover {
+    background-color: #1a2a90; 
+    cursor: pointer;
+}
+.lancamentos-lista {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.lancamentos-item {
+    background-color: var(--panel-color); 
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--highlight-color); 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.lancamentos-item li {
+    margin-bottom: 8px;
+    color: #e0e0e0;
+}
+
+footer {
+    background-color: var(--panel-color) !important;
+    padding: 20px 0;
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    border-top: 1px solid var(--highlight-color);
+}
+footer p {
+    color: #FFFFFF;
+    font-size: 0.9em;
+}
+a {
+    color: var(--highlight-color); 
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+a:hover {
+  
+    color: #FFFFFF; 
+}
